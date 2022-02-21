@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Mall</title>
+
+    <script src="Lab8-TaiNguyen/js/jquery.min.js"></script>
+    <script src="Lab8-TaiNguyen/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Lab8-TaiNguyen/css/bootstrap.min.css">
+    <script src="Lab8-TaiNguyen/js/angular.min.js"></script>
+    <script src="Lab8-TaiNguyen/js/angular-route.js"></script>
+</head>
+
+<body>
+    <div class="container" ng-app="myapp">
+        <header class="row">
+            <div class="shopping-mall">
+                <h1>Online shopping mall</h1>
+                <h5>The center point of the professional programming</h5>
+            </div>
+            <img class="pull-right" src="images/header-object.png" />
+        </header>
+        <nav class="row" ng-include="'MenuBai4.html'">
+        </nav>
+        <div class="poly-sheet row">
+
+            <article class="col-sm-9">
+                <!--Nội dung trang web-->
+                <div ng-show="loading" class="pull-right label label-info">Loading...</div>
+                <ng-view></ng-view>
+            </article>
+
+            <aside class="col-sm-3">
+                <!--CartInfo-->
+                <div class="poly-cart" ng-include="'CartBai4.html'">
+                </div>
+                <!--/CartInfo-->
+
+                <!--Search-->
+                <div class="nn-cart" ng-include="'SearchBai4.html'">
+                </div>
+                <!--/Search-->
+
+                <div class="panel-group" id="accordion">
+                    <style>
+                        #accordion .panel-heading {
+                            cursor: pointer;
+                        }
+                    </style>
+                    <!--Category-->
+                    <div ng-include="'CategoryBai4.html'"></div>
+                    <!--/Category-->
+
+                    <!--Supplier-->
+                   <div ng-include="'SupplierBai4.html'"></div>
+                    <!--/Supplier-->
+
+                    <!--Special-->
+                   <div ng-include="'SpecialBai4.html'"></div>
+                    <!--/Special-->
+                </div>
+
+            </aside>
+        </div>
+
+        <footer class="panel panel-default row">
+            <div class="panel-heading text-center">
+                <p>FPT Polytechnic &copy; 2017. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="layout.js"></script>
+<script src="category-ctrl.js"></script>
+<script src="supplier-ctrl.js"></script>
+<script src="special-ctrl.js"></script>
+</html>
