@@ -1,0 +1,30 @@
+
+
+form {
+    margin: 30px;
+}
+
+.nut {
+    margin-top: 20px;
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+.khung {
+    border: 4px double black;
+    width: 400px;
+    box-shadow: 2px 2px 50px gray;
+    background: linear-gradient(-135deg, rgb(2, 191, 248), rgb(186, 136, 226));
+}
+.k{
+    width: 350px;
+}
+
+
+

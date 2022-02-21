@@ -1,0 +1,98 @@
+header{
+    position: relative;
+}
+.shopping-mall{
+    position:inherit ;
+top: 70px;
+left: 10px;
+font-variant: small-caps;
+}
+.shopping-mall>h1{
+    font-family:Impact;
+    font-size:50px;
+    color:white;
+    letter-spacing: 0.3px;
+    text-shadow:0 0 2px black;
+    padding-bottom:0px;
+    border-bottom:1px dotted;
+    margin:0px;
+}
+.shopping-mall>h5{
+	margin-top:5px;
+    letter-spacing: 0.5px;
+}
+
+/*--ASIDE BOX--*/
+
+.poly-cart{
+    margin-top: 5px;
+     
+}
+
+.poly-cart ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-variant: small-caps;  
+}
+
+.panel-heading strong{
+	font-variant: small-caps;
+	font-size: larger;
+	text-shadow:0 0 2px darkgray;
+}
+
+.poly-cart ul>li>a {
+    text-decoration-line: none;      
+ }
+
+ .footer-social img{
+    background: none repeat scroll 0 0 #5a88ca;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+    width: 40px;
+    border: 1px solid #5a88ca;
+  }/**/
+  
+  .footer-social a:hover {background-color: #222;border-color: #666}
+  
+  .footer-social {margin-top: 20px}/**/
+
+  #form input[type="email"] {
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+  #form input[type="submit"] {
+    background: none repeat scroll 0 0 #5a88ca;
+    border: medium none;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    padding: 7px 20px;
+    text-transform: uppercase;border: 1px solid #5a88ca;
+}
+  #form form input[type="submit"]:hover {background: #222;border-color: #666}
+ #form{
+    margin-top: 25px;
+}
+#menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+#menu ul li {
+    border-bottom: 1px dashed #555;
+    padding: 5px 0;
+}
+#menu a {
+    display: block;
+    padding: 5px 0;color: #999
+}
